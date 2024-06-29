@@ -9,7 +9,22 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .slider-test {
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+        margin: auto;
+        border-radius: 32px;
+      }
+
+      .slider-test img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
     <title>Imobiliária Lorran Dev</title>
   </head>
   <body>
@@ -99,20 +114,28 @@
           <!-- <div class="hero-page-imgs d-flex flex-row align-items-center gap-3 mt-5"> -->
           <div
             id="carousel-exemplo"
-            class="hero-page-imgs-slider carousel carousel-fade slide mt-5"
+            class=" carousel carousel-fade slide mt-5 d-md-none"
             data-bs-ride="carousel"
           >
-            <div class="carousel-inner">
+          <!-- d-md-none aqui a tela maior que 767px este elemento some --> 
+          <!-- indicadores -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        
+            <div class="carousel-inner  slider-test">
               <div data-bs-interval="3000" class="carousel-item active">
-                <img src="./img/hero-page-1.png" alt="img" class="hero-page-img" />
+                <img src="./img/hero-page-1.png" alt="img" class="hero-page-img d-sm-flex " />
               </div>
 
               <div data-bs-interval="3000" class="carousel-item">
-                <img src="./img/hero-page-2.png" alt="img" class="hero-page-img" />
+                <img src="./img/hero-page-2.png" alt="img" class="hero-page-img d-sm-flex" />
               </div>
 
               <div data-bs-interval="3000" class="carousel-item">
-                <img src="./img/hero-page-3.png" alt="img" class="hero-page-img" />
+                <img src="./img/hero-page-3.png" alt="img" class="hero-page-img d-sm-flex" />
               </div>
             </div>
           </div>

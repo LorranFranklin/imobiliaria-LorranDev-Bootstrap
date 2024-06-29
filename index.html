@@ -15,7 +15,7 @@
   <body>
     <!-- poderia usar assim: {fixed-top} mas usei assim=> sticky-top -->
     <header class="fixed-top navbar-expand-lg bg-body-tertiary px-2">
-      <nav class="navbar border-bottom border-primary ">
+      <nav class="navbar border-bottom border-primary">
         <!-- fixed-top -->
         <div class="container col-12">
           <a class="navbar-brand logo" href="index.html">Imobiliária <br /><span>< Lorran Dev/></span></a>
@@ -65,7 +65,7 @@
             Descubra um mundo de conforto, luxo e estilo em cada residência
           </h6>
           <h1 class="container tittle text-center">Eleve sua experiência de vida com casas excepcionais</h1>
-          <p class="container description text-center fs-sm-6 mt-3">
+          <p class="container description text-center fs-sm-6mt-3">
             Explore uma coleção selecionada de residências cuidadosamente projetadas, onde cada detalhe reflete um
             compromisso com conforto incomparável, estática atemporal e um estilo de vida feito sob medida para você.
           </p>
@@ -87,7 +87,7 @@
               Mais informações
             </button>
           </div>
-          <!-- tela maior que 600px  -->
+          <!-- tela maior que 767px elementos aparecem  -->
           <!-- hero-page-imgs mt-5 d-flex gap-3 justify-content-center align-items-center -->
           <div class="hero-page-imgs align-items-center gap-3 mt-5">
             <img src="./img/hero-page-1.png" alt="img" class="hero-page-img" />
@@ -95,23 +95,28 @@
             <img src="./img/hero-page-3.png" alt="img" class="hero-page-img" />
           </div>
 
-          <!-- tela menor que 600px d-md-none=adidionar após concluir as configurações -->
-          <div id="carousel-exemplo" class="hero-page-imgs-slider carousel carousel-fade slide mt-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
+          <!-- Carousel tela maior que 767px d-md-none = elementos somem -->
+          <div
+            id="carousel-exemplo"
+            class="carousel carousel-fade slide px-3 mt-5 d-md-none"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner slider-customer">
               <div data-bs-interval="4000" class="carousel-item active">
-                <img src="./img/hero-page-1.png" alt="img" class="hero-page-img" />
+                <img src="./img/hero-page-1.png" alt="img" class="hero-page-img d-sm-block" />
               </div>
 
               <div data-bs-interval="4000" class="carousel-item">
-                <img src="./img/hero-page-2.png" alt="img" class="hero-page-img" />
+                <img src="./img/hero-page-2.png" alt="img" class="hero-page-img d-sm-block" />
               </div>
 
               <div data-bs-interval="4000" class="carousel-item">
-                <img src="./img/hero-page-3.png" alt="img" class="hero-page-img" />
+                <img src="./img/hero-page-3.png" alt="img" class="hero-page-img d-sm-block" />
               </div>
             </div>
             <div class="carousel-indicators">
-              <button type="button"
+              <button
+                type="button"
                 data-bs-target="#carousel-exemplo"
                 data-bs-slide-to="0"
                 class="active"
