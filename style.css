@@ -12,6 +12,16 @@ body {
   min-height: 100vh;
 }
 
+header {
+  transition: all 0.5s ease-in-out;
+}
+
+header.sticky {
+  background: white;
+  border-bottom: 1px rgba(0, 0, 0, 0.548) solid;
+  padding: 15px 100px;
+}
+
 .logo {
   font-weight: 700;
 }
@@ -73,6 +83,8 @@ body {
   max-width: 400px;
   object-fit: cover;
 }
+
+
 
 #FAQ {
   height: 90vh;
