@@ -23,7 +23,7 @@ body {
   color: #fcb939;
 }
 
-section {
+.hero-page {
   height: 100vh;
   margin-top: 120px;
 }
@@ -51,7 +51,7 @@ section {
   max-width: 400px;
   height: 400px;
   margin: auto;
-  border-radius: 32px;
+  /* border-radius: 32px; */
 }
 
 .slider-customer img {
