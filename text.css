@@ -118,13 +118,57 @@ header.sticky {
   max-width: 100px;
 }
 
-/* .collab img {
-  height: 70px;
-  height: 100%;
-  width: 100%;
-  width: 70px;
-  padding: 2rem 0;
-} */
+/* sobre  */
+.about-imgs h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.about-headlines {
+  margin-top: 60px;
+}
+.about-headlines h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  font-family: sans-serif;
+}
+.about-headlines p {
+  font-size: 28px;
+  opacity: 0.7;
+  margin-bottom: 64px;
+}
+.about-projects h4 {
+  font-size: 36px;
+  font-weight: 400;
+}
+.about-projects div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.about-projects div hr {
+  flex-grow: 1;
+  border: 1px solid #100790;
+}
+.about-projects h5 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.about-projects p {
+  font-size: 22px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+/* btn */
+.about-headlines > #hero-btn-customer {
+  width: 300px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 
 #FAQ {
   height: 90vh;
@@ -137,13 +181,10 @@ header.sticky {
   .hero-page-imgs {
     display: none;
   }
-  .collab img { 
-    /* height: 100%; */
-    /* height: 40px;
-    width: 100%; */
+  .collab img {
     width: 60px;
-    /* padding: 2rem 0; */
-  } 
+  }
+  
 }
 
 @media (max-width: 550px) {
@@ -161,9 +202,6 @@ header.sticky {
     margin-top: 80px;
   }
   .collab img {
-    /* height: 30px; */
-    /* height: 100%; */
-    /* width: 100%; */
     width: 40px;
-  } 
+  }
 }
