@@ -119,18 +119,8 @@ header.sticky {
 }
 
 /* sobre  */
-.about-imgs h1 {
-  font-size: 40px;
-  font-weight: 700;
-}
 .about-headlines {
   margin-top: 60px;
-}
-.about-headlines h2 {
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 28px;
-  font-family: sans-serif;
 }
 .about-headlines p {
   font-size: 28px;
@@ -150,10 +140,6 @@ header.sticky {
 .about-projects div hr {
   flex-grow: 1;
   border: 1px solid #100790;
-}
-.about-projects h5 {
-  font-size: 40px;
-  font-weight: 600;
 }
 .about-projects p {
   font-size: 22px;
@@ -184,6 +170,12 @@ header.sticky {
   .collab img {
     width: 60px;
   }
+  .about-headlines p {
+    font-size: 20px;
+  }
+  .about-projects h4 {
+    font-size: 24px;
+  }
   
 }
 
@@ -203,5 +195,8 @@ header.sticky {
   }
   .collab img {
     width: 40px;
+  }
+  .about-headlines p {
+    font-size: 16px;
   }
 }
