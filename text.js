@@ -101,6 +101,7 @@ sr.reveal("#hero-tittle", { delay: 400 });
 sr.reveal("#hero-description", { delay: 500 });
 sr.reveal("#hero-btn-customer", { delay: 600 });
 sr.reveal(".hero-page-imgs", { delay: 700 });
+sr.reveal("#carousel-exemplo", { delay: 700 });
 sr.reveal(".collab");
 sr.reveal(".about-imgs");
 sr.reveal(".about-headlines", { delay: 400 });
