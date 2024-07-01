@@ -104,7 +104,7 @@ header.sticky {
   height: 90vh;
 }
 @media (max-width: 767px) {
-  .tittle {
+  #hero-tittle {
     font-size: 32px;
     font-weight: 700;
   }
@@ -114,13 +114,13 @@ header.sticky {
 }
 
 @media (max-width: 550px) {
-  .slogan {
+  #hero-slogan {
     width: 90%;
   }
-  .tittle {
+  #hero-tittle {
     font-size: 22px;
   }
-  .btn-customer {
+  #hero-btn-customer {
     font-size: 12px;
     width: 150px;
   }
