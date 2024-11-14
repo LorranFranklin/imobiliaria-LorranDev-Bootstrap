@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    /> -->
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -73,7 +73,7 @@
 
     <section class="hero-page container d-flex flex-column text-align-center align-items-center" id="inicio">
       <div class="row">
-        <div class="col-12 mx-2 px-2">
+        <div class="col-12">
           <h6 id="hero-slogan" class="fs-sm-6 text-center border rounded-5 p-3 mx-auto mt-3">
             Descubra um mundo de conforto, luxo e estilo em cada residência
           </h6>
@@ -144,22 +144,35 @@
       </div>
     </section>
     <!-- colaborated Brands -->
-    <div class="collab bg-primary align-items-center justify-content-center">
-      <div class="collab-2">
-        <img src="img/logos/logo-1.png" alt="logo" />
-        <img src="img/logos/logo-2.png" alt="logo" />
-        <img src="img/logos/logo-3.png" alt="logo" />
-        <img src="img/logos/logo-4.png" alt="logo" />
-        <img src="img/logos/logo-5.png" alt="logo" />
+    <!-- esta abaixo deu muito certo  -->
+    <div class="collab bg-primary d-flex mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <img src="img/logos/logo-1.png" alt="logo" />
+          </div>
+          <div class="col">
+            <img src="img/logos/logo-2.png" alt="logo" />
+          </div>
+          <div class="col">
+            <img src="img/logos/logo-3.png" alt="logo" />
+          </div>
+          <div class="col">
+            <img src="img/logos/logo-4.png" alt="logo" />
+          </div>
+          <div class="col">
+            <img src="img/logos/logo-5.png" alt="logo" />
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- sobre -->
-    <section id="sobre" class="container mt-3 gap-5">
+    <div class="sobre container mt-3 gap-5" id="sobre">
       <div class="row">
         <div class="col-12 d-sm-block d-lg-flex gap-5 mt-5">
           <!-- imagens sobre -->
-          <div class="col-sm-12 col-lg-6 about-imgs align-items-center">
+          <div class="about-imgs col-sm-12 col-lg-6 align-items-center">
             <h1 class="fs-sm-2 fw-bold">Porque Nos Escolher?</h1>
             <img src="./img/about-1.png" alt="img" class="about-img gap-3 my-3" />
             <img src="./img/about-2.png" alt="img" class="about-img gap-3 my-3" />
@@ -169,8 +182,8 @@
           <!-- texto sobre -->
           <div class="col-sm-12 col-lg-6 about-headlines">
             <h2 class="fs-sm-h1 h1 fw-bold">Trazendo um toque de coração e alma para cada casa</h2>
-            <p >Temos orgulho da satisfação de nossos clientes ao verem suas casas prontas isso é o que nos motiva.</p>
-            
+            <p>Temos orgulho da satisfação de nossos clientes ao verem suas casas prontas isso é o que nos motiva.</p>
+
             <!-- current projects -->
             <div class="about-projects mt-5">
               <div>
@@ -206,9 +219,71 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- até aqui ok - até aqui ok - até aqui ok - até aqui ok - até aqui ok - até aqui ok - até aqui ok - até aqui ok - até aqui ok - até aqui ok - até aqui ok - até aqui ok - até aqui ok - até aqui ok-->
+
+    <!-- Services Section  -->
+    <section id="cards-services" class="container mt-100">
+      <div class="row">
+        <div class="col-12 text-center service">
+          <!-- essa div esta concluida -->
+          <h1>Compramos, Vendemos, Alugamos Imóveis</h1>
+          <p>Conte conosco para encontrar a casa perfeita que se adapta ao seu estilo de vida e aspirações.</p>
+        </div>
+      </div>
+      <!-- nos cards abaixo a intenção é fazer com que os cards fiquem em telas grandes 3/3 em telas médias 2/3 e menores 1/3 usando col e css grid -->
+      <!-- teste gpt  -->
+      <div class="container mt-5">
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="service-buy.html" class="text-decoration-none">
+              <article class="p-4 services-box service-buy">
+                <i class="fa-solid fa-house" id="service-logo"></i>
+                <h4 class="mt-3">Comprar Propriedades</h4>
+                <p>
+                  Nós selecionamos casas de sonho para você - encontre a combinação perfeita com a
+                  <b> Imobiliária<span> Lorran Dev</span> </b>, onde comprar supera as expectativas.
+                </p>
+                <i class="fa-solid fa-arrow-right" id="arrow-logo"></i>
+              </article>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="service-sell.html" class="text-decoration-none">
+              <article class="p-4 services-box service-sell">
+                <i class="fa-solid fa-hand-holding-dollar" id="service-logo"></i>
+                <h4 class="mt-3">Vender Propriedades</h4>
+                <p>
+                  Não apenas apresentamos listagens, mas também oferecemos oportunidades para uma venda lucrativa e contínua,
+                  garantindo que seu imóvel esteja nas mãos certas.
+                </p>
+                <i class="fa-solid fa-arrow-right" id="arrow-logo"></i>
+              </article>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="service-rent.html" class="text-decoration-none">
+              <article class="p-4 services-box service-rent">
+                <i class="fa-solid fa-key" id="service-logo"></i>
+                <h4 class="mt-3">Alugue Propriedades</h4>
+                <p>
+                  Oferecemos não apenas casas, mas também experiências, garantimos que seu aluguel seja fácil e satisfatório.
+                </p>
+                <i class="fa-solid fa-arrow-right" id="arrow-logo"></i>
+              </article>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </section>
 
-    <section id="FAQ" class="container" id="FAQ">TESTE 2</section>
+    <section id="FAQ" class="container mt-100" id="FAQ">TESTE 2</section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- scroll Reveal library -->
