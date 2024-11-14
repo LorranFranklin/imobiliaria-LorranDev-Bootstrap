@@ -165,23 +165,24 @@ header.sticky {
 .services-box {
   background-color: #e0e0e0;
   padding: 30px;
-  /* margin-bottom: 20px; */
-  /* width: 450px;  */
-  height: 380px !important;
+  height: 420px !important;
   border-radius: 32px;
   transition: all 0.5s ease-in-out;
   color: #000;
+  position: relative;
+}
+.services-box p {
+  font-size: 20px !important;
 }
 .services-box:hover {
   color: #000;
 }
 #arrow-logo {
+  position: absolute;
   font-size: 20px;
   margin-top: 32px;
-  position: relative;
   left: 85%;
   bottom: 30px;
-  top: 10px;
   opacity: 0;
   transition: all 0.5s ease-in-out;
   color: white;
@@ -209,15 +210,26 @@ header.sticky {
 #FAQ {
   height: 90vh;
 }
-
 /* media queries */
 @media (max-width: 1025px) {
   .collab {
     height: 160px;
   }
+  .services-box {
+    height: 420px;
+    /* width: 450px; */
+  }
+  #cards-services h1 {
+    font-size: 40px;
+  }
+  #cards-services p {
+    font-size: 20px;
+  }
+  .services-box {
+    height: 380px;
+  }
 }
 @media (max-width: 767px) {
-
   #hero-tittle {
     font-size: 32px;
     font-weight: 700;
@@ -227,7 +239,6 @@ header.sticky {
   }
   .collab {
     height: 140px;
-    /* gap: 80px; */
     margin-top: 24px;
   }
   .collab img {
@@ -247,6 +258,12 @@ header.sticky {
   #cards-services p {
     font-size: 18px;
   }
+  .services-box {
+    height: 350px !important;
+  }
+  .services-box h3 {
+    font-size: 34px !important;
+  }
 }
 
 @media (max-width: 550px) {
@@ -262,7 +279,6 @@ header.sticky {
   }
   .collab {
     margin-top: 50px;
-    /* height: 80px; */
   }
   .collab img {
     width: 30px;
@@ -270,30 +286,6 @@ header.sticky {
   .about-headlines p {
     font-size: 16px;
   }
-  /* card services section */
-  /* #service-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-  }
-  .services-box h4 {
-    font-size: 14px;
-    width: 100%;
-    text-align: center;
-  }
-  .services-box {
-    height: 300px !important;
-    align-items: start;
-  }
-  .services-box p {
-    font-size: 14px;
-    width: 100%;
-    text-align: justify;
-  } 
-  #arrow-logo {
-    left: 80%;
-  } */
 }
 
 @media screen and (max-width: 425px) {
@@ -334,13 +326,15 @@ header.sticky {
     justify-content: center;
     font-size: 18px;
   }
-  .services-box h4 {
+  .services-box h3 {
     font-size: 18px !important;
     width: 100%;
     text-align: center;
   }
   .services-box {
     height: 300px !important;
+    min-height: 300px !important;
+    min-width: 230px !important;
     align-items: start;
   }
   .services-box p {
