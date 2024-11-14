@@ -10,12 +10,25 @@
 body {
   background-color: white;
   min-height: 100vh;
+  font-size: 16px;
 }
 
+section {  
+  /* min-width: 100%; */
+  min-height: 100vh !important;
+  min-height: 100% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  /* não usar pois corta parte do texto na section sobre */
+  overflow: hidden !important; 
+  /* não usar pois corta parte do texto na section sobre */
+}
 header {
   background-color: white;
   transition: all 0.5s ease-in-out;
 }
+
 header.sticky {
   background: white;
   border-bottom: 1px rgba(0, 0, 0, 0.548) solid;
@@ -26,6 +39,7 @@ header.sticky {
 .logo {
   font-weight: 700;
 }
+
 .logo span {
   color: #0d6efd;
 }
@@ -34,19 +48,21 @@ header.sticky {
 }
 
 .hero-page {
-  height: 100vh;
   margin-top: 120px;
 }
-.hero-slogan {
+
+#hero-slogan {
   width: 550px;
   font-size: 1rem;
   font-weight: 300;
   align-self: center;
 }
+
 #hero-tittle {
   font-size: 64px;
   font-weight: 700;
 }
+
 #hero-btn-customer {
   width: 180px;
   font-weight: 700;
@@ -59,6 +75,7 @@ header.sticky {
   height: 400px;
   margin: auto;
 }
+
 .slider-customer img {
   width: 100%;
   height: 400px;
@@ -68,44 +85,32 @@ header.sticky {
 .hero-page-imgs {
   display: flex;
   flex-direction: row;
-  gap: 24px;
-  align-items: center;
+  justify-content: space-between;
+  align-items: center; 
   width: 100%;
+  overflow: hidden;
 }
+
 .hero-page-imgs img {
   height: 100%;
   max-height: 450px;
   width: 100%;
   object-fit: cover;
+  overflow: hidden;
+}
+/* COLLAB  */
+/* este é do primeiro, o qual tem col  */
+.collab {
+  width: 100%;
+  height: 186px;
+  /* background-color: #0d6efd; */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
 }
 .simpleParallax {
   border-radius: 32px;
-}
-
-/* colab  */
-.collab {
-  display: flex;
-  flex-direction: row;
-  /* max-height: 180px; */
-  /* width: 100%; */
-  /* gap: 150px; */
-  margin-top: 60px;
-}
-.collab-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 1200px;
-  align-items: center;
-  width: 100%;
-  padding: 2rem 1rem;
-}
-.collab img {
-  height: 100%;
-  max-height: 180px;
-  object-fit: cover;
-  width: 100%;
-  max-width: 100px;
 }
 
 /* sobre  */
@@ -145,11 +150,74 @@ header.sticky {
   margin: 0 auto;
 }
 
+/* Services Section */
+.mt-100 {
+  margin-top: 100px;
+}
+#cards-services h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+#cards-services p {
+  font-size: 24px;
+  opacity: 0.7;
+}
+.services-box {
+  background-color: #e0e0e0;
+  padding: 30px;
+  /* margin-bottom: 20px; */
+  /* width: 450px;  */
+  height: 380px !important;
+  border-radius: 32px;
+  transition: all 0.5s ease-in-out;
+  color: #000;
+}
+.services-box:hover {
+  color: #000;
+}
+#arrow-logo {
+  font-size: 20px;
+  margin-top: 32px;
+  position: relative;
+  left: 85%;
+  bottom: 30px;
+  top: 10px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+.services-box:hover #arrow-logo {
+  opacity: 1;
+  transform: translateX(10px);
+}
+.service-buy:hover {
+  background-color: #556ff6;
+}
+.service-sell:hover {
+  background-color: #8955f6;
+}
+.service-rent:hover {
+  background-color: #f68f55;
+}
+#service-logo {
+  font-size: 32px;
+}
+.services-box b:hover {
+  color: #fff;
+}
 
 #FAQ {
   height: 90vh;
 }
+
+/* media queries */
+@media (max-width: 1025px) {
+  .collab {
+    height: 160px;
+  }
+}
 @media (max-width: 767px) {
+
   #hero-tittle {
     font-size: 32px;
     font-weight: 700;
@@ -157,8 +225,14 @@ header.sticky {
   .hero-page-imgs {
     display: none;
   }
+  .collab {
+    height: 140px;
+    /* gap: 80px; */
+    margin-top: 24px;
+  }
   .collab img {
-    width: 60px;
+    height: 50px;
+    width: 70px;
   }
   .about-headlines p {
     font-size: 20px;
@@ -166,7 +240,13 @@ header.sticky {
   .about-projects h4 {
     font-size: 24px;
   }
-  
+  /* card services section */
+  #cards-services h1 {
+    font-size: 36px;
+  }
+  #cards-services p {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -181,12 +261,94 @@ header.sticky {
     width: 150px;
   }
   .collab {
-    margin-top: 80px;
+    margin-top: 50px;
+    /* height: 80px; */
   }
   .collab img {
-    width: 40px;
+    width: 30px;
   }
   .about-headlines p {
     font-size: 16px;
+  }
+  /* card services section */
+  /* #service-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .services-box h4 {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+  .services-box {
+    height: 300px !important;
+    align-items: start;
+  }
+  .services-box p {
+    font-size: 14px;
+    width: 100%;
+    text-align: justify;
+  } 
+  #arrow-logo {
+    left: 80%;
+  } */
+}
+
+@media screen and (max-width: 425px) {
+  #hero-slogan {
+    font-size: 14px;
+    width: 270px;
+    padding: 8px;
+  }
+  #hero-tittle {
+    font-size: 18px;
+  }
+  #hero-description {
+    font-size: 14px;
+    width: 100% !important;
+  }
+  #hero-btn-customer {
+    font-size: 10px !important;
+    width: 125px !important;
+    padding: 10px !important;
+  }
+  .collab {
+    width: 100%;
+    height: 100px !important;
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .collab img {
+    height: 30px;
+    width: 40px;
+  }
+  .service h1 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+  }
+  #service-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .services-box h4 {
+    font-size: 18px !important;
+    width: 100%;
+    text-align: center;
+  }
+  .services-box {
+    height: 300px !important;
+    align-items: start;
+  }
+  .services-box p {
+    font-size: 16px !important;
+    width: 100%;
+    text-align: justify;
+  }
+  #arrow-logo {
+    left: 80%;
   }
 }
