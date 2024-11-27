@@ -154,20 +154,29 @@ header.sticky {
 
 /* Services Section */
 #cards-services {
-  background-color: #0d6efd;
-  height: 80vh;
-  padding-top: 20px;
+  background-color: #000;
+  /* background-color: #0d6efd; */
+  padding-top: 40px 0 40px 0;
+}
+#cards-services .container .row{
+  /* gap: 40px; */
+}
+.topPadding {
+  padding: 5% 0 8% 0;
 }
 .mt-100 {
   margin-top: 100px;
 }
 .service p{
-  color: white;
+  /* color: #000; */
+  color: #fff;
+  opacity: 1 !important;
 }
 #cards-services h1 {
   font-size: 48px;
-  font-weight: 400;
-  color: white;
+  font-weight: bold;
+  color: #fff;
+  /* color: #000; */
 }
 #cards-services p {
   font-size: 24px;
@@ -175,6 +184,7 @@ header.sticky {
 }
 .services-box {
   background-color: #e0e0e0;
+  /* background-color: #fff; */
   padding: 30px;
   height: 420px !important;
   border-radius: 32px;
@@ -203,13 +213,16 @@ header.sticky {
   transform: translateX(10px);
 }
 .service-buy:hover {
-  background-color: #55f67d;
+  /* background-color: #90ee90; */
+  background-color: #a0a0a0 ;
 }
 .service-sell:hover {
-  background-color: #8955f6;
+  background-color: #a0a0a0;
+  /* background-color: #ffd700; */
 }
 .service-rent:hover {
-  background-color: #f68f55;
+  background-color: #a0a0a0;
+  /* background-color: #f68f55; */
 }
 #service-logo {
   font-size: 32px;
