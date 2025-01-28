@@ -231,6 +231,11 @@ header.sticky {
   color: #fff;
 }
 
+/* section properties  */
+/* .properties p {
+  opacity: 0.7;
+} */
+
 #FAQ {
   height: 90vh;
 }
